@@ -16,7 +16,7 @@
 .text4{
     text-shadow: 1px 1px 1px #650aa1;
     word-spacing: 30px;
-    text-decoration: wavy; 
+    text-decoration: overline wavy; 
 }
 .text5{
     letter-spacing: 5px;
