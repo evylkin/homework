@@ -89,28 +89,18 @@ header {
     margin-left: auto;
     margin-top: 18.5px;
     max-width: 320px;
-    width: 100%;
+    width: 100%; 
 }
 
-.btn-1,
-.btn-2 {
+.btn-tg{
     background: linear-gradient(180deg, #00a4cc 0%, #2766ae 100%);
     border-radius: 100px;
     padding: 18px 30px;
-    justify-content: center;
-    display: flex;
-}
-
-.btn-2 {
-    background: linear-gradient(129deg, #00a4cc 0%, #2766ae 100%);
-    margin-top: 10px;
-}
-
-.btn-tg {
-    background: none;
+    max-width: 320px;
+    width: 100%; 
     font-weight: 500;
+    margin-bottom:15px;
 }
-
 
 .cards {
     padding: 115px;
