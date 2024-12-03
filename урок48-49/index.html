@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Данные</legend>
+            <label for="input1">Имя</label>
+            <input type="text" id="input1" placeholder="Иван">
+            <label for="input2">Фамилия</label>
+            <input type="text" id="input2" placeholder="Иванов">
+            <label for="input3">еще что-то</label>
+            <input type="number" id="input3" max="30" min="-10" step="2">
+            <select  name="formSelect">
+                <option value="">Выбор</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+            </select>
+            <label>Дата отправки отзыва
+                <input type="date" required>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Отзыв</legend>
+            <label> Почта
+                <input type="email" required>
+            </label>
+            <br>
+            <textarea cols="40" rows="10"></textarea>
+            <br>
+            <label>
+                <input type="checkbox">
+                Согласие на обработку данных
+            </label>
+            <br>
+            <label >
+                <input type="radio" name="radio1">
+                1
+            </label>
+            
+            <br>
+            <label >
+                <input type="radio" name="radio1">
+                2
+            </label>
+            <br>
+            <label >
+                <input type="radio" name="radio1">
+                3
+            </label>
+            <br>
+        </fieldset>
+        <button type="submit">Отправить</button>
+        <button type="reset">Отчистить</button>
+        <label >
+            Добавить скриншот
+            <input type="file">
+        </label>
+
+    </form>
+</body>
+</html>
