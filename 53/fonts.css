@@ -1,8 +1,9 @@
 @font-face {
-    font-family: 'Hachi Maru Pop';
-    src: url('/53/fonts/HachiMaruPop-Regular.woff2') format('woff2'),
-        url('/53/fonts/HachiMaruPop-Regular.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Ubuntu';
+    src: url('/53/fonts/Ubuntu-Medium.woff2') format('woff2'),
+        url('/53/fonts/Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
+
