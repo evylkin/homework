@@ -1,0 +1,30 @@
+body{
+    
+    background-color: #181717;
+}
+p {
+    color: #fff;
+    font-size: 30px;
+}
+.rectangle{
+min-height: 100px;
+background: #898f8f;
+border-radius: 10px;
+position: fixed;
+left: 50%;
+right: 50px;
+bottom: 100px;
+
+}
+.circle{
+    width:100px ;
+    height:100px;
+    background: #ff0000;
+    border-radius: 50%;
+    position: relative;
+    top: auto;
+    left: 20px;
+    right: auto;
+    bottom: 50px;
+}
+
