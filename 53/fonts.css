@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Ubuntu';
-    src: url('/53/fonts/Ubuntu-Medium.woff2') format('woff2'),
-        url('/53/fonts/Ubuntu-Medium.woff') format('woff');
+    src: url('./fonts/Ubuntu-Medium.woff2') format('woff2'),
+        url('./fonts/Ubuntu-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
