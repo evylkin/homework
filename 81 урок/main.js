@@ -6,9 +6,9 @@ for(let i = 0; i < numbers.length; i++){
     }
 }
 
-// let colorRainbow = ['красный','оранжевый','желтый','зеленый','голубой','синий', 'фиолетовый']
+let colorRainbow = ['красный','оранжевый','желтый','зеленый','голубой','синий', 'фиолетовый']
 
-// for(let i = colorRainbow.length - 1 ; i >= 0; i--){
-//     console.log(colorRainbow[i])
-// }
+for(let i = colorRainbow.length - 1 ; i >= 0; i--){
+    console.log(colorRainbow[i])
+}
 
