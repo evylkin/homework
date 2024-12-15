@@ -13,12 +13,12 @@
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.452);
-    /* opacity: 0;
+    opacity: 0;
     visibility: hidden;
-    transition: all .3s; */
+    transition: all 1s;
 }
 
-.modal__window {
+.modal__window { 
     position: relative;
     width: 50vw;
     min-height: 40vh;
@@ -33,9 +33,13 @@
     right: 10px;
     font-size: 20px;
     background: none;
-
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
 
 .modal--open {
     display: flex;
+    opacity: 1;
+    visibility: visible
 }
