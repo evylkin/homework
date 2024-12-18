@@ -19,6 +19,15 @@
     overflow: hidden;
 }
 
+.body--open-modal {
+    overflow: hidden;
+}
+.body--open-modal .modal{
+    opacity: 1;
+    visibility: visible;
+
+}
+
 .wrapper {
     min-height: 100%;
     width: 100%;
@@ -39,6 +48,7 @@
 }
 
 .button {
+    width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -53,6 +63,125 @@
 
 .button:hover {
     background: #FF9138;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 11;
+    background: #0000007c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+}
+
+.modal__window {
+    position: relative;
+    width: 428px;
+    background: var(--bg-color-general);
+    padding: 0 60px 60px;
+    border-radius: 20px;
+}
+
+.modal__cancel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.modal__cancel path,
+rect {
+    transition: all .4s;
+}
+
+
+.modal__cancel:hover path,
+.modal__cancel:hover rect {
+    stroke: #AC907A;
+}
+
+
+
+.modal__img {
+    margin: -65px 0 15px 14px;
+}
+
+.modal__title {
+    font-size: 42px;
+    line-height: .9;
+    font-family: 'Gabriola';
+    color: var(--accent-text);
+    margin-bottom: 10px;
+}
+
+.modal__text {
+    margin-bottom: 30px;
+}
+
+.modal__form-label {
+    margin-bottom: 10px;
+}
+
+.field {
+    position: relative;
+    display: block;
+}
+
+.field span {
+    position: absolute;
+    top: 12px;
+    left: 28px;
+    font-size: 11px;
+    color: #AC907A;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.field__input {
+    display: block;
+    width: 100%;
+    background: #00000000;
+    border: 1px solid #AC907A;
+    border-radius: 100px;
+    padding: 19px 42px 19px 28px;
+    font-size: 16px;
+    transition: all .4s;
+}
+
+.field__input:hover {
+    border-color: var(--accent-color);
+}
+
+.field__input::placeholder {
+    color: #AC907A;
+    transition: all .4s;
+}
+
+.field__input:hover::placeholder {
+    color: var(--accent-color);
+}
+
+.field__input:focus::placeholder {
+    color: var(--accent-color);
+}
+
+.field__input:focus {
+    border-color: var(--accent-color);
+    padding: 26px 42px 12px 28px;
+}
+
+.field span {
+    transition: all .4s;
+}
+
+.field__input:focus+span {
+    opacity: 1;
+    visibility: visible;
+
 }
 
 
@@ -277,6 +406,119 @@
 .hero__img-button:hover:before {
     opacity: 1;
 }
+
+/* =========================================================================== */
+.about__indent {
+    padding: 140px 0;
+}
+
+.about__inner {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: 53px;
+}
+
+.about__img {
+    position: relative;
+    overflow: hidden;
+}
+
+.about__img>img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: 0 50%;
+}
+
+.about__img-control {
+    display: flex;
+    max-width: 300px;
+    width: 100%;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: 4.8%;
+    left: 5%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background: #957b97e6;
+    border-radius: 20px;
+    color: var(--bg-color-general);
+}
+
+.about__img-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: var(--bg-color-general);
+    width: 78px;
+    height: 78px;
+    border-radius: 100%;
+    padding-left: 2%;
+}
+
+.about__img-button::before {
+    content: '';
+    position: absolute;
+    border-radius: 100%;
+    inset: 5px;
+    border: 1px solid #CEAAD0;
+    opacity: 0;
+    transition: all .4s;
+
+}
+
+.about__img-button:hover:before {
+    opacity: 1;
+}
+
+.h2 {
+    font-size: 74px;
+    line-height: 0.82;
+    color: var(--accent-text);
+    font-family: 'Gabriola';
+}
+
+.title__text {
+    margin-bottom: 30px;
+}
+
+.about__text {
+    margin-bottom: 40px;
+}
+
+.about__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.cards__list {
+    display: flex;
+    gap: 15px;
+    background: var(--bg-color-accent);
+    border-radius: 20px;
+    padding: 29px 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards__img {
+    display: flex;
+    border: 1px solid var(--general-text);
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 /* ========================================================================== */
 
