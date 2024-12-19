@@ -42,6 +42,31 @@ function closeModal(e){
     }
 }
 
+const tabControls = document.querySelector('.tab-controls')
+
+tabControls.addEventListener('click', toggleTub)
+
+
+function toggleTub(e) {
+
+    const tabControl = e.target.closest('.tab-controls__link')
+
+    if(!tabControl) return
+
+    e.preventDefault()
+
+    if(tabControl.classList.contains('tab-controls__item--active')) return
+
+    const tabContentID = tabControl.getAttribute('href')
+    document.querySelector('.tab-content--show').classList.remove('tab-content--show')
+    document.querySelector(tabContentID).classList.add('tab-content--show')
+
+document.querySelector('.tab-controls__item--active').classList.remove('tab-controls__item--active')
+    tabControl.classList.add('tab-controls__item--active')
+    
+}
+
+
 
 })()
 
