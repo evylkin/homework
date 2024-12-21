@@ -100,6 +100,23 @@
         })
     })
 
+
+    // слайдер-свайпер
+
+    const swiper = new Swiper('.galerey__slider', {
+        spaceBetween: 32,
+        slidesPerView: 4,
+        pagination: {
+            el: '.galerey__pagination',
+            type: 'fraction',
+        },
+
+        navigation: {
+            nextEl: '.galerey__next',
+            prevEl: '.galerey__prev',
+        },
+    });
+
 })()
 
 
