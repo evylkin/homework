@@ -103,9 +103,9 @@
 
     // слайдер-свайпер
 
-    const swiper = new Swiper('.galerey__slider', {
-        spaceBetween: 32,
-        slidesPerView: 4,
+ new  Swiper('.galerey__slider', {
+        spaceBetween: 15,
+        slidesPerView: 1.5,
         pagination: {
             el: '.galerey__pagination',
             type: 'fraction',
@@ -115,9 +115,54 @@
             nextEl: '.galerey__next',
             prevEl: '.galerey__prev',
         },
+
+        breakpoints: {
+            1101: {
+                slidesPerView: 4,
+            },
+            801: {
+                spaceBetween: 32,
+            },
+            601: {
+                slidesPerView: 3,
+            }
+        }
+
     });
 
-})()
+
+
+
+
+    new Swiper('.testimonials__slider', {
+
+        spaceBetween: 0,
+        slidesPerView: 1,
+        centeredSlides: true,
+
+        navigation: {
+            nextEl: '.testimonials__next',
+            prevEl: '.testimonials__prev',
+        },
+
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+        },
+        breakpoints:{
+        901:{
+            slidesPerView: 1.5,
+        },
+        1201:{
+            slidesPerView: 2.1,
+        }
+    }
+    });
+
+
+}
+
+)()
 
 
 
