@@ -82,6 +82,8 @@
 
             const accordionControl = e.target.closest('.accordion-list__control');
             if (!accordionControl) return
+
+            e.preventDefault()
             const accordionItem = accordionControl.parentElement;
             const accordionContent = accordionControl.nextElementSibling;
 
@@ -159,8 +161,16 @@
     }
     });
 
+    // Маска для телефона
+    const telInputs = document.querySelectorAll('input[type=tel]')
+
+    const im= new Inputmask('+7 (999) 999-99-99')
+    im.mask( telInputs)
+
+
 
 }
+
 
 )()
 

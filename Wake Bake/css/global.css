@@ -7,6 +7,10 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
 
 .body {
     background: var(--bg-color-general);
@@ -192,3 +196,5 @@ rect {
 .main__gallerey{
     margin-bottom: 140px;
 }
+
+
