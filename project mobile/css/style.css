@@ -1,0 +1,150 @@
+
+
+
+.body {
+    background:#FFFFFF;
+    color: #000;
+    line-height: 120%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+/* +=========================================================== */
+
+.header{
+    padding-top: 30px;
+}
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.nav__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+}
+.accordion-list__control{
+    display: flex;
+    gap: 4px;
+}
+.header__icons{
+    display: flex;
+    gap: 21px;
+    align-items: flex-end;
+
+}
+.list__item{
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+.burger-icon{
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.burger-icon span{
+    display: flex;
+    background: #000;
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    position: relative;
+}
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+    background:  #000;
+    transition: all .4s;
+}
+.burger-icon span::before{
+    content: "";
+    background: #000;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    bottom: 9px;
+}
+.burger-icon span::after{
+    content: "";
+    background: #000;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 9px;
+}
+
+.body--oppened-menu .burger-icon span {
+    background: transparent;
+}
+
+.body--oppened-menu .burger-icon span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.body--oppened-menu .burger-icon span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px){
+    .header__nav{
+    background: #F8F9FA;
+    position: fixed;
+   top:0% ;
+   left:0%;
+   right: 0%;
+   bottom:61% ;
+    z-index: 10;
+    padding-top: 100px;
+    transform: translateY(-90%);
+    opacity: 0;
+    visibility: hidden;
+
+    }
+    .nav__list{
+        display: flex;
+        flex-direction: column;
+    }
+    .burger-icon{
+        display: flex;
+        z-index: 11;
+    }
+.header__icons {
+
+ align-items: center;
+    }
+    .body--oppened-menu .header__nav {
+        transform: translateY(0%);
+        opacity: 1;
+        visibility:visible;
+    
+    }
+}
