@@ -1,27 +1,29 @@
-(function(){
+// аккардеон
+document.querySelectorAll('.accordion-list__control').forEach((e) => {
+    
+    e.addEventListener('click', () => {
+        let content = e.nextElementSibling;
 
-    document.addEventListener('click', burgerInt)
-
-    function burgerInt(e) {
-        const burgerIcon = e.target.closest('.burger-icon')
-
-        const burgerNavLink = e.target.closest('.list__link')
-
-        if (!burgerIcon && !burgerNavLink) return
-        if (document.documentElement.clientWidth > 800) return
-
-
-        if (!document.body.classList.contains('body--oppened-menu')) {
-            document.body.classList.add('body--oppened-menu')
-        } else {
-            document.body.classList.remove('body--oppened-menu')
+        if(content.style.maxHeight){
+            document.querySelectorAll('.accordion-list__content').forEach((e) => 
+                e.style.maxHeight = null)
+        } 
+        
+        else{
+            document.querySelectorAll('.accordion-list__content').forEach((e) =>
+                e.style.maxHeight = null ) 
+            content.style.maxHeight = content.scrollHeight + 'px'
         }
+    })
+    // e.preventDefault()
+}
+)
+document.querySelector('.accordion-list__control').addEventListener('click', function(){
+    document.querySelector('.accordion-list__control').classList.toggle('accordion-list__item--opened')
+})
 
-    }
+// бургер
 
-
-
-
-
-
+document.getElementById('burger').addEventListener('click', function(){
+    document.querySelector('.body').classList.toggle('body--oppened-menu')
 })

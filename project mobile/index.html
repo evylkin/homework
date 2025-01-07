@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="body ">
+<body class="body">
     <div class="wrapper">
         <header class="header">
             <div class="container">
@@ -18,7 +19,7 @@
                     <a class="header__logo" href="#">
                         <img src="img/logo/california.svg" alt="">
                     </a>
-                    <nav class="header__nav">
+                    <nav class="header__nav ">
                         <ul class="nav__list">
                             <li class="list__item">
                                 <a class="list__link" href="#">
@@ -26,7 +27,7 @@
                                 </a>
                             </li>
                             <li class="list__item accordion-list ">
-                                <a  href="#" class="accordion-list__control list__link">
+                                <a href="#" class="accordion-list__control list__link">
                                     <h3 class="accordion-list__control-title">
                                         Solutions
                                     </h3>
@@ -37,55 +38,307 @@
                                         </svg>
                                     </div>
                                 </a>
-<!--                                 <div class="accordion-list__content">
-                                    <div class="accordion-content">
-                                        <ul class="accordion-content__list">
-                                            <li class="accordion-content__item">
+                                <div class="accordion-list__content">
+                                    <ul class="accordion-content__list">
+                                        <li class="accordion-content__item">
+                                            <a class="list__link" href="#">
                                                 text
-                                            </li>
-                                            <li class="accordion-content__item">
+                                            </a>
+                                        <li class="accordion-content__item">
+                                            <a class="list__link" href="#">
                                                 text
-                                            </li>
-                                            <li class="accordion-content__item">
+                                            </a>
+                                        </li>
+                                        <li class="accordion-content__item">
+                                            <a class="list__link" href="#">
                                                 text
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div> -->
-                            </li>
-                            <li class="list__item">
-                                <a class="list__link" href="#">
-                                    About
-                                </a>
-                            </li>
-                            <li  class="list__item">
-                                <a class="list__link" href="#">
-                                    Support
-                                </a>
+                                            </a>
+                                        </li>
                             </li>
                         </ul>
-                    </nav>
-                    <div class="header__icons">
-                        <div class="icons__search">
-                            <img src="img/icons/search.svg" alt="">
-                        </div>
-                        <div class="icons__basket">
-                            <img src="img/icons/basket.svg" alt="">
-                        </div>
-                        <a href="#" class="burger-icon">
-                            <span></span>
-                        </a>
+                </div>
+                </li>
+                <li class="list__item">
+                    <a class="list__link" href="#">
+                        About
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a class="list__link" href="#">
+                        Support
+                    </a>
+                </li>
+                </ul>
+                </nav>
+                <div class="header__icons">
+                    <div class="icons__search">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M18.9999 18.9999L14.6499 14.6499" stroke="black" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
+                    <div class="icons__basket">
+                        <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                    <a href="#" class="burger-icon" id="burger">
+                        <span></span>
+                    </a>
                 </div>
             </div>
-        </header>
-        <main>
-
-        </main>
-        <footer>
-
-        </footer>
     </div>
+    </header>
+    <main class="main">
+        <section class="main__slider slider">
+            <div class="container">
+
+            </div>
+        </section>
+        <section class="main__shop shop">
+            <div class="container">
+                <div class="shop__inner">
+                    <div class="title shop__inner-title">
+                        <h2 class="h2__title">Shop our latest offers and categories</h2>
+                        <p class="text__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in
+                            est dui, aliquam, tempor. Faucibus morbi turpis. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.</p>
+                    </div>
+                    <ul class="shop__list">
+                        <li class="shop__item">
+                            <a href="#">
+                                <div class="shop__img">
+                                    <img src="img/categories/Laptop.png" alt="">
+                                </div>
+                                <div class="shop__text">
+                                    <span>Laptops</span>
+                                    <h3 class="shop__title">True Laptop Solution</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="shop__item">
+                            <a href="#">
+                                <div class="shop__content">
+                                    <div class="shop__img">
+                                        <img src="img/categories/iphones.png" alt="">
+                                    </div>
+                                    <div class="shop__text">
+                                        <span>Phones</span>
+                                        <h3 class="shop__title">Your day to day life</h3>
+
+                                    </div>
+                                </div>
+
+                            </a>
+                        </li>
+                        <li class="shop__item">
+                            <a href="#">
+                                <div class="shop__text">
+                                    <span>Tablet</span>
+                                    <h3 class="shop__title">Empower your work</h3>
+                                </div>
+                                <div class="shop__img">
+                                    <img src="img/categories/ipad.png" alt="">
+                                </div>
+
+                            </a>
+                        </li>
+                        <li class="shop__item">
+                            <a class="shop__link" href="#">
+                                <div class="shop__img">
+                                    <img src="img/categories/watch-1.png" alt="">
+                                </div>
+                                <div class="shop__text">
+                                    <span>Watch</span>
+                                    <h3 class="shop__title">Not just stylisht</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="main__products products ">
+            <div class="container">
+                <div class="products__inner">
+                    <div class="title products__inner-title">
+                        <h2 class="h2__title">Save on our most selled items.</h2>
+                        <p class="products__text">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
+                    </div>
+                    <ul class="products__item">
+                        <li class="products__list">
+                            <div class="products__img">
+                                <img src="img/selled/laptop-1.png" alt="">
+                            </div>
+                            <div class="products__info">
+                                <h3 class="products__info-title">
+                                    MacBook Pro 13
+                                </h3>
+                                <p class="products__info-text">
+                                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+                                </p>
+                                <span class="products__price">
+                                    $ 1,200.00 USD
+                                </span>
+                            </div>
+                        </li>
+                        <li class="products__list">
+                            <div class="products__img">
+                                <img src="img/selled/watch.png" alt="">
+                            </div>
+                            <div class="products__info">
+                                <h3 class="products__info-title">
+                                    Smart Galaxy Watch 3
+                                </h3>
+                                <p class="products__info-text">
+                                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+                                    adipisci velit...
+                                </p>
+                                <span class="products__price">
+                                    $ 199.00 USD
+                                </span>
+                            </div>
+                        </li>
+                        <li class="products__list">
+                            <div class="products__img">
+                                <img src="img/selled/laptop-2.png" alt="">
+                            </div>
+                            <div class="products__info">
+                                <h3 class="products__info-title">
+                                    MacBook Air M1
+                                </h3>
+                                <p class="products__info-text">
+                                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+                                    adipisci velit...
+                                </p>
+                                <span class="products__price">
+                                    $ 1,009.00 USD
+                                </span>
+                            </div>
+                        </li>
+                        <li class="products__list">
+                            <div class="products__img">
+                                <img src="img/selled/ipad.png" alt="">
+                            </div>
+                            <div class="products__info">
+                                <h3 class="products__info-title">
+                                    iPad
+                                </h3>
+                                <p class="products__info-text">
+                                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
+                                    adipisci velit...
+                                </p>
+                                <span class="products__price">
+                                    $ 610.00 USD
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="catalog main__catalog">
+            <div class="container">
+                <div class="catalog__inner">
+                    <div class="title products__inner-title">
+                        <h2 class="h2__title">See the best around here</h2>
+                        <p class="products__text">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
+                    </div>
+                    <ul class="catalog__cards">
+                        <li class="cards__list">
+                            <div class="cards__content">
+                                <p class="cards__subtitle">
+                                    Smart light bulb pack
+                                </p>
+                                <h4 class="cards__title">Latest and gratest</h4>
+                                <a href="#" class="cards__button">
+                                    Explore
+                                </a>
+                            </div>
+                            <div class="cards__img">
+                                <img src="img/best/watches.png" alt="">
+                            </div>
+                        </li>
+                        <li class="cards__list">
+                            <div class="cards__content">
+                                <p class="cards__subtitle">
+                                    Smart light bulb pack
+                                </p>
+                                <h4 class="cards__title">Best selling</h4>
+                                <a href="#" class="cards__button">
+                                    Explore
+                                </a>
+                            </div>
+                            <div class="cards__img">
+                                <img src="img/best/devies.png" alt="">
+                            </div>
+                        </li>
+                        <li class="cards__list">
+                            <div class="cards__content">
+                                <p class="cards__subtitle">
+                                    Smart light bulb pack
+                                </p>
+                                <h4 class="cards__title">Every product</h4>
+                                <a href="#" class="cards__button">
+                                    Explore
+                                </a>
+                            </div>
+                            <div class="cards__img">
+                                <img src="img/best/laptop-and-phone.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="ideas main__ideas">
+            <div class="container">
+                <div class="ideas__inner">
+                    <div class="title products__inner-title">
+                        <h2 class="h2__title">Ideas have a place here</h2>
+                        <p class="products__text">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
+                    </div>
+                    <div class="ideas__content">
+                        <div class="ideas__img">
+                            <img src="img/ideas.jpg" alt="">
+                        </div>
+                        <div class="ideas__text">
+                            <p>We Make It Easy To Find The Great Design Talent, Easier...</p>
+                            <p>Road Design Handbook For The International Road...</p>
+                            <p>The Best Kept Secrets About Creative People</p>
+                            <p>We Make It Easy To Find The Great Design Talent, Easier...</p>
+                        </div>
+                    </div>
+                    <a class="ideas__all" href="#">
+                        <span>See all</span>
+                        <div class="ideas__all-img">
+                            <img src="img/icons/See_all.svg" alt="">
+
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+    </div>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
