@@ -798,6 +798,7 @@
     
         .header__icons {
             align-items: center;
+            margin-right: 0;
         }
     
         .body.body--oppened-menu .header__nav {
