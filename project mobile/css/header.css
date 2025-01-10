@@ -1,0 +1,147 @@
+.header {
+    padding-top: 30px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.header__logo {
+    z-index: 11;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+}
+
+.accordion-list__control {
+    display: flex;
+    gap: 4px;
+}
+
+.header__icons {
+    display: flex;
+    gap: 21px;
+    align-items: flex-end;
+
+}
+
+.list__item {
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+.burger-icon {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.burger-icon span {
+    display: flex;
+    background: var(--color-general);
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    position: relative;
+    transition: all .4s;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+    content: "";
+    background:var(--color-general);
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    bottom: 9px;
+    transition: all .4s;
+}
+
+.burger-icon span::after {
+    top: 9px;
+}
+
+.body--oppened-menu {
+    overflow: hidden;
+}
+
+.body--oppened-menu .burger-icon span {
+    background: transparent;
+}
+
+.body--oppened-menu .burger-icon span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.body--oppened-menu .burger-icon span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.accordion-list__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .4s;
+
+}
+
+.accordion-content__list {
+    margin-top: 10px;
+}
+
+.accordion-content__item {
+    margin-bottom: 5px;
+}
+
+.accordion-content__item:last-child {
+    margin-bottom: 0px;
+}
+
+.accordion-content__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list__link {
+    transition: all .4s;
+}
+
+.list__link:hover {
+    color: var(--color-first);
+}
+
+
+.accordion-list__item--opened .accordion-list__control-icon {
+    transform: rotate(180deg);
+}
+
+.icons__search,
+.icons__basket {
+    cursor: pointer;
+}
+
+.icons__search path,
+.icons__basket path {
+    transition: all .4s;
+}
+
+.icons__search:hover path,
+.icons__basket:hover path {
+    stroke: var(--color-first);
+}
